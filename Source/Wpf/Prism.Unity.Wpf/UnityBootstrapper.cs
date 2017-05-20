@@ -8,9 +8,9 @@ using Prism.Modularity;
 using Prism.Regions;
 using Prism.Unity.Properties;
 using Microsoft.Practices.ServiceLocation;
-using Microsoft.Practices.Unity;
 using Prism.Mvvm;
 using Prism.Unity.Regions;
+using Unity;
 
 namespace Prism.Unity
 {
@@ -125,7 +125,7 @@ namespace Prism.Unity
             base.RegisterFrameworkExceptionTypes();
 
             ExceptionExtensions.RegisterFrameworkExceptionType(
-                typeof(Microsoft.Practices.Unity.ResolutionFailedException));
+                typeof(ResolutionFailedException));
         }
 
         /// <summary>
